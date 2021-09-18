@@ -21,5 +21,5 @@
 
 <h3 align="left">🔗 Ну и ссылка на сайтик, конечно: </h3>
 <h1 align="center">
-  <a href="http://mdaleg.ru">Тык</a>
+  <a href="https://hud0shnik.github.io/">Тык</a>
 </h1>
