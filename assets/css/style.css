@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #149dde;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #37b3ec;
   text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #149dde;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #149dde;
   color: #fff;
   text-decoration: none;
 }
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #149dde;
 }
 
 /* Mobile Navigation */
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #149dde;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #149dde;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -274,7 +274,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #149dde;
   bottom: 0;
   left: 0;
 }
@@ -305,7 +305,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #149dde;
   line-height: 0;
 }
 .about .content p:last-child {
@@ -325,7 +325,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #149dde;
   float: left;
   line-height: 0;
 }
@@ -387,7 +387,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #149dde;
 }
 
 /*--------------------------------------------------------------
@@ -403,10 +403,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #149dde;
 }
 .services .icon i {
   color: #fff;
@@ -414,10 +414,10 @@ section {
   line-height: 0;
 }
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #149dde;
 }
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #149dde;
 }
 .services .title {
   margin-left: 80px;
@@ -429,7 +429,7 @@ section {
   color: #343a40;
 }
 .services .title a:hover {
-  color: #149ddd;
+  color: #149dde;
 }
 .services .description {
   margin-left: 80px;
@@ -450,7 +450,7 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #149dde;
   float: left;
   width: 44px;
   height: 44px;
@@ -495,11 +495,11 @@ section {
   margin-right: 10px;
 }
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #149dde;
   color: #fff;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #149dde;
   color: #fff;
 }
 @-webkit-keyframes animate-loading {
