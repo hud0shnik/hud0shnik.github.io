@@ -10,13 +10,17 @@ a {
   color: #149dde;
   text-decoration: none;
 }
-
 a:hover {
   color: #37b3ec;
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -81,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align-last: center;
   font-family: "Poppins", sans-serif;
 }
-#header .profile h1 a, #header .profile h1 a:hover {
+#header .profile h1 a,
+#header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -108,14 +113,13 @@ h1, h2, h3, h4, h5, h6 {
 #main {
   margin-left: 300px;
 }
-
 @media (max-width: 1199px) {
   #header {
-    left: -300px;
+      left: -300px;
   }
 
   #main {
-    margin-left: 0;
+      margin-left: 0;
   }
 }
 /*--------------------------------------------------------------
@@ -123,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 30px 0 0;
 }
 .nav-menu * {
   margin: 0;
@@ -134,7 +138,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   white-space: nowrap;
 }
-.nav-menu a, .nav-menu a:focus {
+.nav-menu a,
+.nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -143,16 +148,23 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
 }
-.nav-menu a i, .nav-menu a:focus i {
+.nav-menu a i,
+.nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
-.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu a:hover,
+.nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
-.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu a:hover i,
+.nav-menu li:hover > a i {
   color: #149dde;
 }
 
@@ -210,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 300px;
 }
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -230,18 +242,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+      background-attachment: fixed;
   }
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+      font-size: 28px;
+      line-height: 36px;
   }
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
   }
 }
 
@@ -338,7 +350,7 @@ section {
   margin-left: 60px;
 }
 .facts .count-box p {
-  padding: 15px 0 0 0;
+  padding: 15px 0 0;
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -358,7 +370,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -368,7 +380,7 @@ section {
 }
 .skills .progress .skill {
   padding: 0;
-  margin: 0 0 6px 0;
+  margin: 0 0 6px;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
@@ -498,24 +510,26 @@ section {
   background: #149dde;
   color: #fff;
 }
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .address:hover i,
+.contact .info .email:hover i,
+.contact .info .phone:hover i {
   background: #149dde;
   color: #fff;
 }
 @-webkit-keyframes animate-loading {
   0% {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 @keyframes animate-loading {
   0% {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 
@@ -544,8 +558,8 @@ section {
 }
 @media (max-width: 1199px) {
   #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
+      position: static;
+      width: auto;
+      padding-right: 20px 15px;
   }
 }
