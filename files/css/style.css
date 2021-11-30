@@ -458,14 +458,14 @@ section {
 
 
 /*--------------------------------------------------------------
-# Services
+# Tools
 --------------------------------------------------------------*/
 
-.services .icon-box {
+.tools .icon-box {
 	margin-bottom: 20px;
 }
 
-.services .icon {
+.tools .icon {
 	float: left;
 	display: flex;
 	align-items: center;
@@ -478,36 +478,36 @@ section {
 	border: 1px solid #149dde;
 }
 
-.services .icon i {
+.tools .icon i {
 	color: #ffffff;
 	font-size: 24px;
 	line-height: 0;
 }
 
-.services .icon-box:hover .icon {
+.tools .icon-box:hover .icon {
 	background: #149dde;
 }
 
-.services .icon-box:hover .icon i {
+.tools .icon-box:hover .icon i {
 	color: #149dde;
 }
 
-.services .title {
+.tools .title {
 	margin-left: 80px;
 	font-weight: 700;
 	margin-bottom: 15px;
 	font-size: 18px;
 }
 
-.services .title a {
+.tools .title a {
 	color: #343a40;
 }
 
-.services .title a:hover {
+.tools .title a:hover {
 	color: #149dde;
 }
 
-.services .description {
+.tools .description {
 	margin-left: 80px;
 	line-height: 24px;
 	font-size: 14px;
@@ -584,6 +584,9 @@ section {
 .contact .info .social-links a:hover {
 	background: #149dde;
 	color: #ffffff;
+}
+.contact img{
+	border-radius: 5px;
 }
 
 .contact .info .address:hover i,
