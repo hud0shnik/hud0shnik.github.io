@@ -232,17 +232,17 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Hero Section
+# me Section
 --------------------------------------------------------------*/
 
-#hero {
+#me {
 	width: 100%;
 	height: 100vh;
-	background: url("../img/hero-bg.jpg") top center;
+	background: url("../img/me-bg.jpg") top center;
 	background-size: cover;
 }
 
-#hero:before {
+#me:before {
 	content: "";
 	background: rgba(5, 13, 23, 0.301);
 	position: absolute;
@@ -253,13 +253,13 @@ h6 {
 	z-index: 1;
 }
 
-#hero .hero-container {
+#me .me-container {
 	position: relative;
 	z-index: 2;
 	min-width: 300px;
 }
 
-#hero h1 {
+#me h1 {
 	margin: 0 0 10px;
 	font-size: 64px;
 	font-weight: 700;
@@ -267,14 +267,14 @@ h6 {
 	color: #ffffff;
 }
 
-#hero p {
+#me p {
 	color: #ffffff;
 	margin-bottom: 50px;
 	font-size: 26px;
 	font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
+#me p span {
 	color: #ffffff;
 	padding-bottom: 4px;
 	letter-spacing: 1px;
@@ -282,17 +282,17 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-	#hero {
+	#me {
 		background-attachment: fixed;
 	}
 }
 
 @media (max-width: 768px) {
-	#hero h1 {
+	#me h1 {
 		font-size: 28px;
 		line-height: 36px;
 	}
-	#hero h2 {
+	#me h2 {
 		font-size: 18px;
 		line-height: 24px;
 		margin-bottom: 30px;
