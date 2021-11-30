@@ -1,5 +1,3 @@
-
-
 (function () {
 	"use strict";
 
@@ -34,16 +32,14 @@
 			if (!navbarlink.hash) return;
 			let section = select(navbarlink.hash);
 			if (!section) return;
-			if (
-				position >= section.offsetTop &&
-				position <= section.offsetTop + section.offsetHeight
-			) {
+			if (position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight) {
 				navbarlink.classList.add("active");
 			} else {
 				navbarlink.classList.remove("active");
 			}
 		});
 	};
+
 	window.addEventListener("load", navbarlinksActive);
 	onscroll(document, navbarlinksActive);
 
@@ -109,9 +105,9 @@
 		new Typed(".typed", {
 			strings: typed_strings,
 			loop: true,
-			typeSpeed: 90,
-			backSpeed: 51,
-			backDelay: 1999,
+			typeSpeed: 77,
+			backDelay: 1997,
+			backSpeed: 57,
 		});
 	}
 
@@ -138,4 +134,3 @@
 		});
 	});
 })();
-
