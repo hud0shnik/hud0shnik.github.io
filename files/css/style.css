@@ -1,86 +1,43 @@
-
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/*	Общее	*/
 
 body {
 	font-family: "Open Sans", sans-serif;
 	color: #272829;
 }
 
-a {
-	color: #149dde;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #37b3ec;
-	text-decoration: none;
-}
-
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Raleway", sans-serif;
 }
 
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-
-.back-to-top {
-	position: fixed;
-	visibility: hidden;
-	opacity: 0;
-	right: 15px;
-	bottom: 15px;
-	z-index: 996;
-	background: #149dde;
-	width: 40px;
-	height: 40px;
-	border-radius: 50px;
-	transition: all 0.4s;
+a {
+	text-decoration: none;
+	color: #149dde;
 }
 
-.back-to-top i {
-	font-size: 28px;
-	color: #ffffff;
-	line-height: 0;
+a:hover {
+	color: #37b3ec;
 }
 
-.back-to-top:hover {
-	background: #2eafec;
-	color: #ffffff;
-}
-
-.back-to-top.active {
-	visibility: visible;
-	opacity: 1;
-}
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/*	Голова	*/
 
 #header {
-	position: fixed;
+	padding: 0 15px;
+	width: 300px;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	width: 300px;
-	transition: all ease-in-out 0.5s;
 	z-index: 9997;
+	transition: all ease-in-out 0.5s;
 	transition: all 0.5s;
-	padding: 0 15px;
-	background: #040b14;
+	position: fixed;
 	overflow-y: auto;
+	background: #040b14;
 }
 
 #header .profile img {
 	margin: 15px auto;
-	display: block;
 	width: 120px;
+	display: block;
 	border: 7px solid #2c2f3f;
 }
 
@@ -94,31 +51,30 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: "Poppins", sans-serif;
 }
 
-#header .profile h1 a,
-#header .profile h1 a:hover {
-	color: #ffffff;
+#header .profile h1 {
 	text-decoration: none;
+	color: #ffffff;
 }
 
 #header .profile .social-links a {
 	font-size: 18px;
+	width: 37px;
+	height: 37px;
+	padding: 10px;
+	margin-right: 5px;
+	line-height: 1;
+	border-radius: 50%;
+	transition: 0.5s;
 	display: inline-block;
+	text-align: center;
 	background: #212431;
 	color: #ffffff;
-	line-height: 1;
-	padding: 8px 0;
-	margin-right: 4px;
-	border-radius: 50%;
-	text-align: center;
-	width: 36px;
-	height: 36px;
-	transition: 0.3s;
 }
 
 #header .profile .social-links a:hover {
+	text-decoration: none;
 	background: #149dde;
 	color: #ffffff;
-	text-decoration: none;
 }
 
 #main {
@@ -134,16 +90,7 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
-
-/*--------------------------------------------------------------
-Ну раз ты даже в css залез, вот тебе пасхалочка:
-            teletype.in/@hud0shnik
-Да, это мой телетайп, я его не сильно афиширую (на момент коммита) 
-так что считай это падарком на новый год. :^)
---------------------------------------------------------------*/
-
-
-/* Desktop Navigation */
+/* Десктопная секция навигации */
 
 .nav-menu {
 	padding: 30px 0 0;
@@ -162,13 +109,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav-menu a,
 .nav-menu a:focus {
-	display: flex;
-	align-items: center;
-	color: #a8a9b4;
+	font-size: 15px;
 	padding: 12px 15px;
 	margin-bottom: 8px;
 	transition: 0.3s;
-	font-size: 15px;
+	display: flex;
+	align-items: center;
+	color: #a8a9b4;
 }
 
 .nav-menu a i,
@@ -194,27 +141,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/* Mobile Navigation */
+/* Мобильная секция навигации */
 
 .mobile-nav-toggle {
-	position: fixed;
+	border-radius: 50px;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
 	right: 15px;
 	top: 15px;
+	transition: all 0.4s;
+	line-height: 0;
 	z-index: 9998;
 	border: 0;
-	font-size: 24px;
-	transition: all 0.4s;
 	outline: none !important;
-	background-color: #149dde;
-	color: #ffffff;
-	width: 40px;
-	height: 40px;
+	justify-content: center;
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
-	line-height: 0;
-	border-radius: 50px;
+	position: fixed;
 	cursor: pointer;
+	color: #ffffff;
+	background-color: #149dde;
 }
 
 .mobile-nav-active {
@@ -226,54 +173,52 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/*--------------------------------------------------------------
-# Me Section
---------------------------------------------------------------*/
+/*	Главная красота сайта - Я	*/
 
 #me {
-	width: 100%;
-	height: 100vh;
 	background: url("../img/me-bg.jpg") top center;
 	background-size: cover;
+	height: 100vh;
+	width: 100%;
 }
 
 #me:before {
-	content: "";
 	background: rgba(5, 13, 23, 0.301);
 	position: absolute;
-	bottom: 0;
+	content: "";
 	top: 0;
 	left: 0;
 	right: 0;
+	bottom: 0;
 	z-index: 1;
 }
 
 #me .me-container {
 	position: relative;
-	z-index: 2;
 	min-width: 300px;
+	z-index: 2;
 }
 
 #me h1 {
+	line-height: 56px;
 	margin: 0 0 10px;
 	font-size: 64px;
 	font-weight: 700;
-	line-height: 56px;
 	color: #ffffff;
 }
 
 #me p {
-	color: #ffffff;
 	margin-bottom: 50px;
 	font-size: 26px;
 	font-family: "Poppins", sans-serif;
+	color: #ffffff;
 }
 
 #me p span {
-	color: #ffffff;
+	border-bottom: 3px solid #149dde;
 	padding-bottom: 4px;
 	letter-spacing: 1px;
-	border-bottom: 3px solid #149dde;
+	color: #ffffff;
 }
 
 @media (min-width: 1024px) {
@@ -295,9 +240,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+/*	Общее для всех секций	*/
 
 section {
 	padding: 60px 0;
@@ -313,23 +256,23 @@ section {
 }
 
 .section-title h2 {
-	font-size: 32px;
-	font-weight: bold;
-	margin-bottom: 20px;
 	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-size: 32px;
 	position: relative;
+	font-weight: bold;
 	color: #173b6c;
 }
 
 .section-title h2::after {
-	content: "";
-	position: absolute;
-	display: block;
-	width: 50px;
 	height: 3px;
-	background: #149dde;
+	width: 50px;
 	bottom: 0;
 	left: 0;
+	position: absolute;
+	display: block;
+	content: "";
+	background: #149dde;
 }
 
 .section-title p {
@@ -337,19 +280,17 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/*	Обо мне	*/
 
 .about .content h3 {
-	font-weight: 700;
 	font-size: 26px;
+	font-weight: 700;
 	color: #173b6c;
 }
 
 .about .content ul {
-	list-style: none;
 	padding: 0;
+	list-style: none;
 }
 
 .about img {
@@ -358,8 +299,8 @@ section {
 
 .about .content ul li {
 	margin-bottom: 20px;
-	display: flex;
 	align-items: center;
+	display: flex;
 }
 
 .about .content ul strong {
@@ -367,16 +308,14 @@ section {
 }
 
 .about .content ul i {
-	font-size: 16px;
 	margin-right: 5px;
-	color: #149dde;
+	font-size: 16px;
 	line-height: 0;
+	color: #149dde;
 }
 
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
+/*	Факты	*/
 
 .facts {
 	padding-bottom: 30px;
@@ -388,60 +327,58 @@ section {
 }
 
 .facts .count-box i {
-	display: block;
 	font-size: 44px;
-	color: #149dde;
-	float: left;
 	line-height: 0;
+	display: block;
+	float: left;
+	color: #149dde;
 }
 
 .facts .count-box span {
-	font-size: 48px;
-	line-height: 40px;
-	display: block;
-	font-weight: 700;
-	color: #050d18;
 	margin-left: 60px;
+	line-height: 40px;
+	font-size: 48px;
+	font-weight: 700;
+	display: block;
+	color: #050d18;
 }
 
 .facts .count-box p {
 	padding: 15px 0 0;
 	margin: 0 0 0 60px;
-	font-family: "Raleway", sans-serif;
 	font-size: 14px;
 	color: #122f57;
+	font-family: "Raleway", sans-serif;
 }
 
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+/*	Скилз	*/
 
 .skills .progress {
 	height: 60px;
-	display: block;
-	background: none;
 	border-radius: 0;
+	background: none;
+	display: block;
 }
 
 .skills .progress .skill {
-	padding: 0;
 	margin: 0 0 6px;
-	text-transform: uppercase;
-	display: block;
 	font-weight: 600;
+	padding: 0;
+	display: block;
+	text-transform: uppercase;
 	font-family: "Poppins", sans-serif;
 	color: #050d18;
 }
 
 .skills .progress .skill .val {
-	float: right;
 	font-style: normal;
+	float: right;
 }
 
 .skills .progress-bar-wrap {
-	background: #dce8f8;
 	height: 10px;
+	background: #dce8f8;
 }
 
 .skills .progress-bar {
@@ -452,31 +389,29 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Tools
---------------------------------------------------------------*/
+/*	Тулзы	*/
 
 .tools .icon-box {
 	margin-bottom: 20px;
 }
 
 .tools .icon {
+	border: 1px solid #149dde;
+	height: 54px;
+	width: 54px;
+	border-radius: 50%;
+	transition: 0.5s;
 	float: left;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 54px;
-	height: 54px;
 	background: #ffffff;
-	border-radius: 50%;
-	transition: 0.5s;
-	border: 1px solid #149dde;
 }
 
 .tools .icon i {
-	color: #ffffff;
 	font-size: 24px;
 	line-height: 0;
+	color: #ffffff;
 }
 
 .tools .icon-box:hover .icon {
@@ -488,10 +423,10 @@ section {
 }
 
 .tools .title {
-	margin-left: 80px;
-	font-weight: 700;
-	margin-bottom: 15px;
 	font-size: 18px;
+	margin-left: 80px;
+	margin-bottom: 15px;
+	font-weight: 700;
 }
 
 .tools .title a {
@@ -509,9 +444,7 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/*	Контакты	*/
 
 .contact {
 	padding-bottom: 130px;
@@ -519,30 +452,30 @@ section {
 
 .contact .info {
 	padding: 30px;
-	background: #ffffff;
 	width: 100%;
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+	background: #ffffff;
 }
 
 .contact .info i {
-	font-size: 20px;
-	color: #149dde;
-	float: left;
-	width: 44px;
-	height: 44px;
-	background: #dff3fc;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	border-radius: 50px;
+	font-size: 20px;
+	height: 44px;
+	width: 44px;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	transition: all 0.3s ease-in-out;
+	background: #dff3fc;
+	color: #149dde;
 }
 
 .contact .info h4 {
 	padding: 0 0 0 60px;
+	margin-bottom: 5px;
 	font-size: 22px;
 	font-weight: 600;
-	margin-bottom: 5px;
 	color: #050d18;
 }
 
@@ -562,18 +495,18 @@ section {
 }
 
 .contact .info .social-links a {
+	margin-right: 10px;
 	font-size: 18px;
+	padding: 8px 0;
+	height: 36px;
+	width: 36px;
+	line-height: 1;
+	transition: 0.3s;
+	border-radius: 50%;
+	text-align: center;
 	display: inline-block;
 	background: #333;
 	color: #ffffff;
-	line-height: 1;
-	padding: 8px 0;
-	border-radius: 50%;
-	text-align: center;
-	width: 36px;
-	height: 36px;
-	transition: 0.3s;
-	margin-right: 10px;
 }
 
 .contact .info .social-links a:hover {
@@ -610,19 +543,17 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/*	Ноги	*/
 
 #footer {
-	padding: 15px;
-	color: #f4f6fd;
 	font-size: 14px;
-	position: fixed;
-	left: 0;
-	bottom: 0;
+	padding: 15px;
 	width: 300px;
 	z-index: 9999;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	color: #f4f6fd;
 	background: #040b15;
 }
 
@@ -635,16 +566,55 @@ section {
 }
 
 #footer .credits {
+	font-size: 13px;
 	padding-top: 5px;
 	text-align: center;
-	font-size: 13px;
 	color: #eaebf1;
 }
 
 @media (max-width: 1199px) {
 	#footer {
+		padding-right: 20px 15px;
 		position: static;
 		width: auto;
-		padding-right: 20px 15px;
 	}
 }
+
+/*	Кнопка "Наверх"	*/
+
+.back-to-top {
+	right: 15px;
+	width: 40px;
+	bottom: 15px;
+	height: 40px;
+	border-radius: 50px;
+	opacity: 0;
+	z-index: 996;
+	transition: all 0.4s;
+	position: fixed;
+	visibility: hidden;
+	background: #149dde;
+}
+
+.back-to-top i {
+	font-size: 28px;
+	line-height: 0;
+	color: #ffffff;
+}
+
+.back-to-top:hover {
+	color: #ffffff;
+	background: #2eafec;
+}
+
+.back-to-top.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*----------------------------------------------------------
+Ну раз ты даже в css залез, вот тебе пасхалочка:
+            teletype.in/@hud0shnik
+Да, это мой телетайп, я его не сильно афиширую (на момент коммита) 
+так что считай это падарком на новый год. :^)
+----------------------------------------------------------*/
