@@ -57,11 +57,11 @@ a:hover {
 }
 
 #header .profile .social-links a {
+	margin-right: 5px;
 	font-size: 18px;
+	padding: 10px;
 	width: 37px;
 	height: 37px;
-	padding: 10px;
-	margin-right: 5px;
 	line-height: 1;
 	border-radius: 50%;
 	transition: 0.5s;
