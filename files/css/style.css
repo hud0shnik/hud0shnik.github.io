@@ -19,12 +19,7 @@ a:hover {
 	text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
 	font-family: "Raleway", sans-serif;
 }
 
@@ -629,6 +624,14 @@ section {
 	width: 300px;
 	z-index: 9999;
 	background: #040b15;
+}
+
+.username{
+	color: #b4dafc;
+}
+
+.username:hover{
+	color: #2eafec;
 }
 
 #footer .credits {
