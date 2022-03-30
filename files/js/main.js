@@ -133,4 +133,17 @@
 			mirror: false,
 		});
 	});
+
+	var wheel = document.getElementById('circle')
+	var wheelBBox = wheel.getBBox()
+	
+	var cx = wheelBBox.x + wheelBBox.width / 2
+	var cy = wheelBBox.y + + wheelBBox.height / 2
+	
+	var t0 = Date.now()
+	
+	setInterval(function() {
+	var delta = (Date.now() - t0)
+	wheel.setAttribute('transform', 'rotate(-' + delta * 0.04 + ', ' + cx + ', ' + cy + ')')
+	}, 10)
 })();
