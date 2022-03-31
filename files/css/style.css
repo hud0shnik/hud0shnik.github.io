@@ -444,8 +444,12 @@ section {
 
 /*	Сертификаты	*/
 
-#papers{
+.papers{
 	background: #f5f8fd;
+}
+
+.papers img{
+	border-radius: 5px;
 }
 
 
