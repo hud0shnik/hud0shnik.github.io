@@ -413,10 +413,6 @@ section {
 	color: #ffffff;
 }
 
-.tools .icon-box:hover .icon {
-	background: #149dde;
-}
-
 .tools .icon-box:hover .icon i {
 	color: #149dde;
 }
