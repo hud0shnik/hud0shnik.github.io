@@ -134,6 +134,7 @@
 		});
 	});
 
+
 	var wheel = document.getElementById('circle')
 	var wheelBBox = wheel.getBBox()
 	
@@ -146,4 +147,17 @@
 	var delta = (Date.now() - t0)
 	wheel.setAttribute('transform', 'rotate(-' + delta * 0.04 + ', ' + cx + ', ' + cy + ')')
 	}, 10)
+
+	var isNew = false;
+	document.getElementById('switch-button').onclick = function () { 
+		if (!isNew){
+			document.getElementById('theme_css').href = '../files/css/styleNew.css';
+			document.title = 'Красивый сайт Дани Егорова';
+			isNew = true;
+		}else{
+			document.getElementById('theme_css').href = '../files/css/style.css';
+			document.title = 'Сайт Дани Егорова | 19 лет принципиальности';
+			isNew = false;
+		}
+	};
 })();
