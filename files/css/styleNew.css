@@ -1,0 +1,593 @@
+/*	Общее	*/
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #272829;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #7371cf;
+}
+
+a:hover {
+	color: #f93549;
+}
+
+/*	Голова	*/
+
+#header {
+	padding: 0 15px;
+	width: 300px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 9997;
+	transition: all ease-in-out 0.5s;
+	transition: all 0.5s;
+	position: fixed;
+	overflow-y: auto;
+	background: #634ba6;
+}
+
+#header .profile img {
+	margin: 15px auto;
+	width: 120px;
+	display: block;
+	border: 3px solid #fff;
+}
+
+#header .profile h1 {
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	-moz-text-align-last: center;
+	text-align-last: center;
+	font-family: "Poppins", sans-serif;
+}
+
+#header .profile h1 {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#header .profile .social-links a {
+	margin-right: 5px;
+	font-size: 18px;
+	padding: 10px;
+	width: 37px;
+	height: 37px;
+	line-height: 1;
+	border-radius: 50%;
+	transition: 0.5s;
+	display: inline-block;
+	text-align: center;
+	background: #fff;
+	color: #634ba6;
+}
+
+#header .profile .social-links a:hover {
+	text-decoration: none;
+	background: #f93549;
+	color: #fff;
+}
+
+#main {
+	margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+	#header {
+		left: -300px;
+	}
+	#main {
+		margin-left: 0;
+	}
+}
+
+/* Десктопная секция навигации */
+
+.nav-menu {
+	padding: 30px 0 0;
+	text-transform: uppercase;  
+	font-weight: 900;
+}
+
+.nav-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-menu>ul>li {
+	position: relative;
+	white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+	font-size: 15px;
+	padding: 12px 15px;
+	margin-bottom: 8px;
+	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+	font-size: 24px;
+	padding-right: 8px;
+	color: #fff;
+}
+
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu a:hover,
+.nav-menu li:hover>a {
+	background-color: #fff;
+	text-decoration: none;
+	color: #f93549;
+}
+
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu a:hover i,
+.nav-menu li:hover>a i {
+	transition: .2s ease;
+	color: #f93549;
+}
+
+
+/* Мобильная секция навигации */
+
+.mobile-nav-toggle {
+	border-radius: 50px;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	right: 15px;
+	top: 15px;
+	transition: all 0.4s;
+	line-height: 0;
+	z-index: 9998;
+	border: 0;
+	outline: none !important;
+	justify-content: center;
+	display: inline-flex;
+	align-items: center;
+	position: fixed;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #149dde;
+}
+
+.mobile-nav-active {
+	overflow: hidden;
+}
+
+.mobile-nav-active #header {
+	left: 0;
+}
+
+
+/*	Главная красота сайта - Я	*/
+
+#me {
+	background: url("../img/me-bg.jpg") top center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+#me:before {
+	background: rgba(5, 13, 23, 0.301);
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+#me .me-container {
+	position: relative;
+	min-width: 300px;
+	z-index: 2;
+}
+
+#me h1 {
+	line-height: 56px;
+	margin: 0 0 10px;
+	font-size: 64px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+#me p {
+	margin-bottom: 50px;
+	font-size: 26px;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+}
+
+#me p span {
+	border-bottom: 3px solid #f93549;
+	padding-bottom: 4px;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+	#me {
+		background-attachment: fixed;
+	}
+}
+
+@media (max-width: 768px) {
+	#me h1 {
+		font-size: 28px;
+		line-height: 36px;
+	}
+	#me h2 {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+}
+
+
+/*	Общее для всех секций	*/
+
+section {
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+.section-bg {
+	background: rgba(249, 53, 73, .05);
+}
+
+.section-title {
+	padding-bottom: 30px;
+}
+
+.section-title h2 {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-size: 32px;
+	position: relative;
+	font-weight: bold;
+	color: #f93549;
+}
+
+.section-title h2::after {
+	height: 3px;
+	width: 50px;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	display: block;
+	content: "";
+	background: #634ba6;
+}
+
+.section-title p {
+	margin-bottom: 0;
+}
+
+
+/*	Обо мне	*/
+
+.about .content h3 {
+	font-size: 26px;
+	font-weight: 700;
+	color: #f93549;
+}
+
+.about .content ul {
+	padding: 0;
+	list-style: none;
+}
+
+.about img {
+	border-radius: 5px;
+}
+
+.about .content ul li {
+	margin-bottom: 20px;
+	align-items: center;
+	display: flex;
+}
+
+.about .content ul strong {
+	margin-right: 10px;
+}
+
+.about .content ul i {
+	margin-right: 5px;
+	font-size: 16px;
+	line-height: 0;
+	color: #7371cf;
+}
+
+
+/*	Факты	*/
+
+.facts {
+	padding-bottom: 30px;
+}
+
+.facts .count-box {
+	padding: 30px;
+	width: 100%;
+}
+
+.facts .count-box i {
+	font-size: 44px;
+	line-height: 0;
+	display: block;
+	float: left;
+	color: #7371cf;
+}
+
+.facts .count-box span {
+	margin-left: 60px;
+	line-height: 40px;
+	font-size: 48px;
+	font-weight: 700;
+	display: block;
+	color: #050d18;
+}
+
+.facts .count-box p {
+	padding: 15px 0 0;
+	margin: 0 0 0 60px;
+	font-size: 14px;
+	color: #545151;
+	font-family: "Raleway", sans-serif;
+}
+
+.facts i,
+.purecounter{
+	background-image: linear-gradient(180deg,#7371cf 0,#f93549 70%,#f93549 100%);
+	filter: drop-shadow(0 20px 30px #28d8ff33);
+	color: black;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-box-decoration-break: clone;
+
+}
+
+/*	Скилз	*/
+
+.skills .progress {
+	height: 60px;
+	border-radius: 0;
+	background: none;
+	display: block;
+}
+
+.skills .progress .skill {
+	margin: 0 0 6px;
+	font-weight: 600;
+	padding: 0;
+	display: block;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	color: #050d18;
+}
+
+.skills .progress .skill .val {
+	font-style: normal;
+	float: right;
+}
+
+.skills .progress-bar-wrap {
+	height: 10px;
+	background: rgba(249, 53, 73, .1);
+}
+
+.skills .progress-bar {
+	width: 1px;
+	height: 10px;
+	transition: 0.9s;
+	background-color: rgb(249, 53, 73);
+}
+
+
+/*	Тулзы	*/
+
+.tools .icon-box {
+	margin-bottom: 20px;
+}
+
+.tools .icon {
+	border: 1px solid #634ba6;
+	height: 54px;
+	width: 54px;
+	border-radius: 50%;
+	transition: 0.5s;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+}
+
+.tools .icon i {
+	font-size: 24px;
+	line-height: 0;
+	color: #ffffff;
+}
+
+.tools .title {
+	font-size: 18px;
+	margin-left: 80px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+
+.tools .title a {
+	color: #634ba6;
+}
+
+.tools .title a:hover {
+	color: #f93549;
+}
+
+.tools .description {
+	margin-left: 80px;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+/*	Сертификаты	*/
+
+.papers img{
+	border-radius: 5px;
+}
+
+
+/*	Контакты	*/
+
+.contact {
+	padding-bottom: 130px;
+}
+
+.contact .info {
+	padding: 30px;
+	width: 100%;
+	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+	background: #ffffff;
+}
+
+.contact .info i {
+	border-radius: 50px;
+	font-size: 20px;
+	height: 44px;
+	width: 44px;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+	background: rgba(249, 53, 73, .05);
+	color: #7371cf;
+}
+
+.contact .info h4 {
+	padding: 0 0 0 60px;
+	margin-bottom: 5px;
+	font-size: 22px;
+	font-weight: 600;
+	color: #050d18;
+}
+
+.contact .info p {
+	padding: 0 0 10px 60px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #173b6c;
+}
+
+@-webkit-keyframes animate-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animate-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*	Ноги	*/
+
+#footer {
+	font-size: 14px;
+	padding: 15px;
+	width: 300px;
+	z-index: 9999;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	color: #f4f6fd;
+	background: #634ba6;
+}
+
+.username{
+	color: #fff;
+}
+
+.username:hover{
+	background-color: #fff;
+	color: #f93549;
+}
+
+#footer .credits {
+	font-size: 13px;
+	padding-top: 5px;
+	text-align: center;
+	color: #eaebf1;
+}
+
+@media (max-width: 1199px) {
+	#footer {
+		padding-right: 20px 15px;
+		position: static;
+		width: auto;
+	}
+}
+
+/*	Кнопка "Наверх"	*/
+
+.back-to-top {
+	right: 15px;
+	width: 40px;
+	bottom: 15px;
+	height: 40px;
+	border-radius: 50px;
+	opacity: 0;
+	z-index: 996;
+	transition: all 0.4s;
+	position: fixed;
+	visibility: hidden;
+	background: #f93549;
+}
+.back-to-top i {
+	font-size: 28px;
+	line-height: 0;
+	color: #ffffff;
+}
+
+.back-to-top:hover {
+	background: #634ba6;
+}
+
+.back-to-top.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*----------------------------------------------------------
+Ну раз ты даже в css залез, вот тебе пасхалочка:
+            teletype.in/@hud0shnik
+Да, это мой телетайп, я его не сильно афиширую (на момент коммита) 
+так что считай это падарком на новый год. :^)
+----------------------------------------------------------*/
