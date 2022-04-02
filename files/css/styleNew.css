@@ -361,9 +361,8 @@ section {
 	filter: drop-shadow(0 20px 30px #28d8ff33);
 	color: black;
 	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	-webkit-box-decoration-break: clone;
-
+	background-clip: text;
+	box-decoration-break: clone;
 }
 
 /*	Скилз	*/
