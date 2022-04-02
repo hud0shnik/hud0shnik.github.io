@@ -413,10 +413,6 @@ section {
 	color: #ffffff;
 }
 
-.tools .icon-box:hover .icon i {
-	color: #149dde;
-}
-
 .tools .title {
 	font-size: 18px;
 	margin-left: 80px;
@@ -489,44 +485,6 @@ section {
 	margin-bottom: 20px;
 	font-size: 14px;
 	color: #173b6c;
-}
-
-.contact .info .email p {
-	padding-top: 5px;
-}
-
-.contact .info .social-links {
-	padding-left: 60px;
-}
-
-.contact .info .social-links a {
-	margin-right: 10px;
-	font-size: 18px;
-	padding: 8px 0;
-	height: 36px;
-	width: 36px;
-	line-height: 1;
-	transition: 0.3s;
-	border-radius: 50%;
-	text-align: center;
-	display: inline-block;
-	background: #333;
-	color: #ffffff;
-}
-
-.contact .info .social-links a:hover {
-	background: #149dde;
-	color: #ffffff;
-}
-.contact img{
-	border-radius: 5px;
-}
-
-.contact .info .address:hover i,
-.contact .info .email:hover i,
-.contact .info .phone:hover i {
-	background: #149dde;
-	color: #ffffff;
 }
 
 @-webkit-keyframes animate-loading {
@@ -608,7 +566,6 @@ section {
 }
 
 .back-to-top:hover {
-	color: #ffffff;
 	background: #2eafec;
 }
 
