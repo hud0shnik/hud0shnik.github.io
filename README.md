@@ -10,6 +10,8 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
 <a href="https://getbootstrap.com/" target="_blank"> 
   <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="bootstrap" width="40" height="40"/></a>
+<a href="https://www.figma.com" target="_blank"> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" width="40" height="40"/></a>
 
 
 <h3 align="left">📄 О самом проекте:</h3>
