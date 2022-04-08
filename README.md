@@ -1,9 +1,5 @@
 # 💻 Мой новый сайт 💻
 
-<h3 align="left">💾 Ссылка на старую версию: </h3>
-<a href="http://mdaleg.ru">mdaleg.ru</a>
-
-
 <h3 align="left">🛠 Штуки, которые я заюзал:</h3>
 
 <a href="https://www.w3.org/html/" target="_blank">
@@ -24,3 +20,5 @@
 
 <h3 align="left">🔗 А, ну и ссылка на сам сайтик:</h3>
 <h2 align="center">💎<a href="https://hud0shnik.github.io/">hud0shnik.github.io</a>💎</h2>
+
+
