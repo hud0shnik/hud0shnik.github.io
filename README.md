@@ -12,6 +12,8 @@
   <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="bootstrap" width="40" height="40"/></a>
 <a href="https://www.figma.com" target="_blank"> 
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" width="40" height="40"/></a>
+<a href="https://code.visualstudio.com/" target="_blank">
+  <img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png" alt="VS code" width="40" height="40"/></a>
 
 
 <h3 align="left">📄 О самом проекте:</h3>
