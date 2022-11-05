@@ -1,5 +1,7 @@
 # 💻 Мой новый сайт 💻
 
+[![License - BSD 3-Clause](https://img.shields.io/static/v1?label=License&message=BSD+3-Clause&color=%239a68af&style=for-the-badge)](/LICENSE)
+
 <h3 align="left">🛠 Штуки, которые я заюзал:</h3>
 
 <!-- Html -->
@@ -33,5 +35,3 @@
 <h2 align="center">💎<a href="https://hud0shnik.github.io/">hud0shnik.github.io</a>💎</h2>
 
 
-
-[![License - BSD 3-Clause](https://img.shields.io/static/v1?label=License&message=BSD+3-Clause&color=%239a68af&style=for-the-badge)](/LICENSE)
