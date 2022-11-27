@@ -152,11 +152,11 @@
 	document.getElementById('switch-button').onclick = function () { 
 		if (!isNew){
 			document.getElementById('theme_css').href = '../files/css/styleNew.css';
-			document.title = 'Красивый сайт Дани Егорова';
+			document.title = 'Красивый сайт Дани Егорова | 20 лет принципиальности';
 			isNew = true;
 		}else{
 			document.getElementById('theme_css').href = '../files/css/style.css';
-			document.title = 'Сайт Дани Егорова | 19 лет принципиальности';
+			document.title = 'Сайт Дани Егорова | 20 лет принципиальности';
 			isNew = false;
 		}
 	};
