@@ -134,7 +134,8 @@
 		});
 	});
 
-
+	
+	// Задизайненная в фигме крутилка
 	var wheel = document.getElementById('circle')
 	var wheelBBox = wheel.getBBox()
 	
@@ -148,15 +149,16 @@
 	wheel.setAttribute('transform', 'rotate(-' + delta * 0.04 + ', ' + cx + ', ' + cy + ')')
 	}, 10)
 
+	// Смена тайтла страницы при смене темы
 	var isNew = false;
 	document.getElementById('switch-button').onclick = function () { 
 		if (!isNew){
 			document.getElementById('theme_css').href = '../files/css/styleNew.css';
-			document.title = 'Красивый сайт Дани Егорова | 21 год принципиальности';
+			document.title = 'Красивый сайт Дани Егорова | 22 года принципиальности';
 			isNew = true;
 		}else{
 			document.getElementById('theme_css').href = '../files/css/style.css';
-			document.title = 'Сайт Дани Егорова | 21 год принципиальности';
+			document.title = 'Сайт Дани Егорова | 22 года принципиальности';
 			isNew = false;
 		}
 	};
